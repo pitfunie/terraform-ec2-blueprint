@@ -25,7 +25,7 @@ data "aws_ami" "amazon_linux_2023" {
 }
 
 resource "aws_security_group" "sg_linux_demo" {
-  name        = "sg-linux-demo"
+  name        = "slinux-demo-sg"
   description = "Allow SSH, HTTP, HTTPS"
   vpc_id      = data.aws_vpc.default.id
 
